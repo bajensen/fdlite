@@ -1,0 +1,79 @@
+<script src="fdlite.js"></script>
+
+<script>
+
+    var allPassed = true;
+
+    function test (d, format, expected) {
+        var result = formatDate(d, format);
+        if (expected != result) {
+            console.error('Test failed! Expected = %s, Recieved = %s', expected, result);
+            allPassed = false;
+        }
+        else {
+            console.log('Test Passed');
+        }
+    }
+    var d = new Date(1465273583087 - 1000 * 60 * 60 * 13 - 1000 * 60 * 20 - 1000 * 20); // Mon Jun 06 2016 09:06:03 GMT-0600 (MDT)
+    console.log(d);
+    test(d, 'MMMM', 'June');
+    test(d, 'MMM', 'Jun');
+    test(d, 'MM', '06');
+    test(d, 'M', '6');
+    test(d, 'DD', '06');
+    test(d, 'D', '6');
+    test(d, 'dddd', 'Monday');
+    test(d, 'ddd', 'Mon');
+    test(d, 'd', '1');
+    test(d, 'YY', '16');
+    test(d, 'YYYY', '2016');
+    test(d, 'A', 'AM');
+    test(d, 'a', 'am');
+    test(d, 'H', '9');
+    test(d, 'HH', '09');
+    test(d, 'h', '9');
+    test(d, 'hh', '09');
+    test(d, 'm', '6');
+    test(d, 'mm', '06');
+    test(d, 's', '3');
+    test(d, 'ss', '03');
+    test(d, 'SSS', '87');
+    test(d, 'SS', '8');
+    test(d, 'S', '0');
+
+    var d = new Date(1465273583087); // Mon Jun 06 2016 22:26:23 GMT-0600 (MDT)
+    console.log(d);
+    test(d, 'MMMM', 'June');
+    test(d, 'MMM', 'Jun');
+    test(d, 'MM', '06');
+    test(d, 'M', '6');
+    test(d, 'DD', '06');
+    test(d, 'D', '6');
+    test(d, 'dddd', 'Monday');
+    test(d, 'ddd', 'Mon');
+    test(d, 'd', '1');
+    test(d, 'YY', '16');
+    test(d, 'YYYY', '2016');
+    test(d, 'A', 'PM');
+    test(d, 'a', 'pm');
+    test(d, 'H', '22');
+    test(d, 'HH', '22');
+    test(d, 'h', '10');
+    test(d, 'hh', '10');
+    test(d, 'm', '26');
+    test(d, 'mm', '26');
+    test(d, 's', '23');
+    test(d, 'ss', '23');
+    test(d, 'SSS', '87');
+    test(d, 'SS', '8');
+    test(d, 'S', '0');
+
+    test(d, 'dddd, MMMM D YYYY hh:mm:ss a',
+            'Monday, June 6 2016 10:26:23 pm');
+
+    test(d, 'dddd, MMMM D YYYY HH:mm:ss A',
+            'Monday, June 6 2016 22:26:23 PM');
+
+    if (! allPassed) console.error('SOME TEST FAILED!');
+    else console.log("All tests passed! :)");
+</script>
