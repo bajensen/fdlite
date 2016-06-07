@@ -6,15 +6,19 @@ I got tired of including large libraries to perform simple date formats in javas
 
 The files are available on github: https://github.com/bajensen/fdlite
 
-### Documentation
--------------
+## Download
+Minified: https://raw.githubusercontent.com/bajensen/fdlite/master/fdlite.min.js
+Full: https://raw.githubusercontent.com/bajensen/fdlite/master/fdlite.js
+
+## Documentation
 `fdlite(date, format)`
 
-## Arguments
+### Arguments
 `date` Date|String The date to format
+
 `format` String A format string structured using the tokens listed below.
 
-## Tokens
+### Tokens
 These tokens are inspired by https://github.com/taylorhakes/fecha
 
 <table class="table table-striped table-bordered">
