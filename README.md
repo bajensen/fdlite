@@ -8,6 +8,7 @@ The files are available on github: https://github.com/bajensen/fdlite
 
 ## Download
 Minified: https://raw.githubusercontent.com/bajensen/fdlite/master/fdlite.min.js
+
 Full: https://raw.githubusercontent.com/bajensen/fdlite/master/fdlite.js
 
 ## Documentation
