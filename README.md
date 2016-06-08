@@ -7,9 +7,9 @@ I got tired of including large libraries to perform simple date formats in javas
 The files are available on github: https://github.com/bajensen/fdlite
 
 ## Download
-Minified: https://raw.githubusercontent.com/bajensen/fdlite/master/fdlite.min.js
+Minified: https://raw.githubusercontent.com/bajensen/fdlite/master/fdlite.min.js (1.6 KB)
 
-Full: https://raw.githubusercontent.com/bajensen/fdlite/master/fdlite.js
+Full: https://raw.githubusercontent.com/bajensen/fdlite/master/fdlite.js (2.9 KB)
 
 ## Documentation
 `fdlite(date, format)`
