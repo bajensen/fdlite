@@ -151,3 +151,6 @@ These tokens are inspired by https://github.com/taylorhakes/fecha
     </tr>
   </tbody>
 </table>
+
+### Contributers
+Jeff ([jburgin](https://github.com/jburgin))
