@@ -24,7 +24,7 @@ function fdlite (date, format) {
 
     function get12Hour (t) {
         var hr = t.getHours();
-        return hr < 13 ? (hr == 0 ? 12 : hr + 1) : hr - 12;
+        return hr < 13 ? hr : hr - 12;
     }
 
     function pad(str, len) {
